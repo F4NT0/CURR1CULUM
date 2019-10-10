@@ -11,49 +11,55 @@
         android:id="@+id/githubButton"
         android:layout_width="115dp"
         android:layout_height="122dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/github_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/linkedinButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        android:onClick="linkgithub"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        tools:ignore="MissingConstraints" />
 
     <ImageButton
         android:id="@+id/linkedinButton"
         android:layout_width="115dp"
         android:layout_height="122dp"
+        android:layout_marginTop="32dp"
+        android:onClick="linkLinkedin"
         android:background="@drawable/linkedin_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/siteButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.546"
-        app:layout_constraintStart_toEndOf="@+id/githubButton"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.197" />
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/githubButton" />
 
     <ImageButton
         android:id="@+id/siteButton"
         android:layout_width="115dp"
         android:layout_height="122dp"
+        android:layout_marginTop="24dp"
+        android:onClick="linkSite"
         android:background="@drawable/my_syte_button"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/twitterButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.206"
+        app:layout_constraintHorizontal_bias="0.111"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/githubButton"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintTop_toBottomOf="@+id/linkedinButton" />
 
     <ImageButton
         android:id="@+id/twitterButton"
         android:layout_width="115dp"
         android:layout_height="122dp"
+        android:layout_marginBottom="60dp"
+        android:onClick="linkTwitter"
         android:background="@drawable/twitter_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.55"
-        app:layout_constraintStart_toEndOf="@+id/siteButton"
-        app:layout_constraintTop_toBottomOf="@+id/linkedinButton"
-        app:layout_constraintVertical_bias="0.215" />
+        app:layout_constraintHorizontal_bias="0.902"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/siteButton"
+        app:layout_constraintVertical_bias="0.313" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
